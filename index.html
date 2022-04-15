@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><span><img src="imagenes/rick.png" alt=""></span></li>
+                <li><h1>Rick And Morty</h1></li>
+                <li><span><img src="imagenes/morty.png" alt=""></span></li>
+                <li><span></span></li>
+            </ul>
+        </nav>
+        <div id="home"></div>
+    </header>
+    <main>
+        
+        <section class="galeria">
+            <!--inicio del filtro (no se puede ingresar el filtro dentro de algun elemento sin usar jquery, el filtro estalla)
+            el filtro tiene que ser hermano de id="imagenes" -->
+                <input type="radio" name="filtro" id="galeria__todo--seleccion"checked>
+                <label for="todo">Todo</label>
+        
+                <input type="radio" name="filtro" id="galeria__xone--seleccion" >
+                <label for="xone">Xbox One</label>
+        
+                <input type="radio" name="filtro" id="galeria__ps4--seleccion" >
+                <label for="ps4">Ps4</label>
+        
+                <input type="radio" name="filtro" id="galeria__switch--seleccion" >
+                <label for="switch">Switch</label>
+
+                <input type="radio" name="filtro" id="galeria__x360--seleccion" >
+                <label for="x360">Xbox 360</label>
+    
+            <article id="galeria__productos">
+                
+                <div class="productos__ps4">
+                    <h3 id="nombreJuego">Bloodborne</h3>
+                    <hr/>
+                    <img src="imagenes/bloodbornePs4.jpg" alt="bloodborne" />
+                    <h5>Bloodborne nos lleva a la decrépita ciudad de Yharnam, cuyos habitantes han sido infectados por una misteriosa enfermedad sanguínea.</h5>
+                </div>
+                                
+                <div class="productos__ps4">
+                    <h3 id="nombreJuego">Immortals fenyx rising</h3>
+                    <hr/>
+                    <img src="imagenes/immortals-fenyx-rising-3Ps4.jpg" alt="inmortals-fenix" />
+                    <h5>Juega como Fenyx, una nueva semidiosa alada con la misión de salvar a los dioses griegos y a su hogar de una oscura maldición</h5>
+                </div>
+                                
+                <div class="productos__switch">
+                    <h3 id="nombreJuego">Legend of zelda: breath of the wild</h3>
+                    <hr/>
+                    <img src="imagenes/legend-zelda-breath-wildSwitch.jpg" alt="breath of the wild" />
+                    <h5>Nos presenta el título más ambicioso de la saga con un mundo abierto por explorar</h5>
+                </div>
+                                
+                <div class="productos__xone">
+                    <h3 id="nombreJuego">Gears 5</h3>
+                    <hr/>
+                    <img src="imagenes/portada-gears-5One.jpg" alt="gears of war 5" />
+                    <h5>Se centra en Kait Díaz (Laura Bailey), una forastera de ascendencia Locust. Como Kait, el jugador debe descubrir los orígenes del Enjambre </h5>
+                </div>
+                                
+                <div class="productos__x360">
+                    <h3 id="nombreJuego">Remember me</h3>
+                    <hr/>
+                    <img src="imagenes/remember-me360.jpg" alt="remember me" />
+                    <h5>Los recuerdos personales ahora pueden ser digitalizados, comprados, vendidos y comercializados.  </h5>
+                </div>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <br/>
+        <p>Todos los derechos reservados</p>
+        <p>Uniagustiniana 2022</p>
+
+    </footer>
+    
+</body>
+</html>
