@@ -85,7 +85,8 @@ nav ul li h1{
     padding: 14px 16px;
     text-shadow: rgb(238, 255, 0) 1px 1px  40px ;
 }
-
+main{    background-color: #ff8a5cc5;
+}
 .galeria {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -94,6 +95,7 @@ nav ul li h1{
   }
 
   .sel1{
+width: 15px;
     grid-column: 1;
     grid-row: 1;
   }
@@ -103,10 +105,8 @@ nav ul li h1{
     grid-row: 1;
   }
 
-
-
-
   .sel2{
+width: 15px;
     grid-column: 1;
     grid-row: 2;
   }
@@ -117,6 +117,7 @@ nav ul li h1{
   }
 
   .sel3{
+width: 15px;
     grid-column: 1;
     grid-row: 3;
   }
@@ -127,6 +128,7 @@ nav ul li h1{
   }
 
   .sel4{
+width: 15px;
     grid-column: 1;
     grid-row: 4;
   }
@@ -135,7 +137,9 @@ nav ul li h1{
     grid-column: 1;
     grid-row: 4;
   }
+
   .sel5{
+    width: 15px;
     grid-column: 1;
     grid-row: 5;
   }
@@ -147,7 +151,9 @@ nav ul li h1{
 /**inicio del card**/
 
 #galeria__personajes{
-    grid-column: 2/6;
+    background: rgb(255, 255, 255);
+    border-radius:1rem;
+    grid-column: 2/7;
     grid-row: 1/8;
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +187,7 @@ header {
     min-height: 10%
 }
 main{
-    margin-top:1vh;
+    padding-top:1vh;
     padding: 1rem;
     flex: 1 0 auto; 
     min-height:80%;
