@@ -1,6 +1,5 @@
 .card {
-    width: 190px;
-    height: 254px;
+    max-width: 250px;
     border-radius: 10px;
     background: #f1f5f3;
     box-shadow: 1px 5px 60px 0px #4646466b;
@@ -9,7 +8,7 @@
     margin-top:2rem;
    }
    
-   .card .personaje-foto,.card .nombre,.card .jobtitle,.card .buttons {
+   .card .personaje-foto,.card .nombre,.card div p,.card .buttons,.card .estatus {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +44,7 @@
     background: transparent;
     border: 1px solid #0f0f0f6b;
     border-radius: .4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: all .3s;
     font-size: .7em;
    }
@@ -60,7 +60,14 @@
     font-size: 1em;
    }
    
-   .card .jobtitle p {
+   .card div p {
+    margin-bottom: 10%;
+    font-size: .54em;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+   }
+   
+   .card div label {
     margin-bottom: 10%;
     font-size: .54em;
     text-transform: uppercase;
