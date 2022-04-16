@@ -1,0 +1,69 @@
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 10px;
+    background: #f1f5f3;
+    box-shadow: 1px 5px 60px 0px #4646466b;
+    padding: 1px;
+    margin: 15px;
+    margin-top:2rem;
+   }
+   
+   .card .personaje-foto,.card .nombre,.card .jobtitle,.card .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .card .personaje-foto {
+    border: 2px solid #4646466b;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .3s;
+   }
+   
+   .card .personaje-foto p {
+    font-size: .8em;
+   }
+
+   .personaje-foto p img{
+    max-width: 80px;
+    max-height: 80px;
+   }
+
+   .buttons > div {
+    padding: .5em;
+   }
+   
+   button {
+    padding: .5em;
+    outline: none;
+    background: transparent;
+    border: 1px solid #0f0f0f6b;
+    border-radius: .4em;
+    transition: all .3s;
+    font-size: .7em;
+   }
+   
+   .card .personaje-foto:hover,button:hover {
+    background: #252525;
+    color: #f1f5f3;
+   }
+   
+   .card .nombre p {
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-size: 1em;
+   }
+   
+   .card .jobtitle p {
+    margin-bottom: 10%;
+    font-size: .54em;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+   }
+   

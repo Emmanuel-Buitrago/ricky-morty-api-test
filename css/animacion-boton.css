@@ -1,5 +1,5 @@
-li a,
-li a::after {
+nav ul li a,
+nav ul li a::after {
  padding: 0.7rem 20px;
  font-size: 18px;
  background: linear-gradient(45deg, transparent 5%, rgb(0, 104, 5) 5%);
@@ -12,7 +12,7 @@ li a::after {
  position: relative;
 }
 
-li a::after {
+nav ul li a::after {
  --slice-0: inset(50% 50% 50% 50%);
  --slice-1: inset(80% -6px 0 0);
  --slice-2: inset(50% -6px 30% 0);
@@ -31,7 +31,7 @@ li a::after {
  clip-path: var(--slice-0);
 }
 
-li a:hover::after {
+nav ul li a:hover::after {
  animation: 1s glitch;
  animation-timing-function: steps(2, end);
 }

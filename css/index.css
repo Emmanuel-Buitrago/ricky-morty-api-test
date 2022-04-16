@@ -1,8 +1,9 @@
-
+@font-face {
+    font-family: Get_Schwifty;
+    src: url(../fuentes/get_schwifty.ttf);
+}
 *{
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Creepster', cursive;
+
     margin: 0;
     padding: 0;
     font-weight: normal;
@@ -14,15 +15,20 @@ body{
 }
 
 header span{
-    height: 10vh;
+    height: 10vw;
 }
-nav{
+nav{    
+    font-family: Get_Schwifty;
     position: fixed; 
     width: 100%;
     height: 10vh;
+    background: #1edf6e;
+    overflow: hidden;
 }
 
-ul {
+nav ul {
+    position: relative;
+    z-index: 2;
     height: 100%;
     display: flex; 
     list-style-type: none;
@@ -30,37 +36,54 @@ ul {
     padding: 0;
     padding-bottom:1vh;
     overflow: hidden;
-    background: white url(../imagenes/patron2.jpg);
-    background-repeat: repeat;
+
     /*
+    #ff8a5c
     background-color: rgb(42, 35, 51);
     background: rgb(28,128,0);
     background: linear-gradient(rgb(200, 255, 1) 1% ,rgba(28,128,0,1) 15%,rgba(28,128,0,1) 82%,rgba(255,255,255,1) 86%, rgba(28,128,0,1) 90%, rgb(0, 0, 0) 100%); 
     */
  }
+ nav:before{    
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+    background-image: url(../imagenes/patron2.jpg);
+    background-repeat: repeat;
+}
 
-li {
+nav ul li {
     display:flex;
     align-items: center;
     float: left;
     margin: auto;
 
 }
-li img{
-    max-height: 90%;
+nav ul li a{
+    text-transform: uppercase;
+
+}
+nav ul li img{
+    max-height: 10vh;
+    max-width: 10vh;
 }
 
-li h1{
-    font-size: 5vh;
-    font-size: 5wh;
-    font-weight:900;
+nav ul li h1{
+    text-transform: capitalize; 
+    font-size: 260%;
+    font-weight:700;
     display: block;
     color: #69c8ec;
-    -webkit-text-stroke:  0.5px  rgb(210, 255, 7) ;
+    -webkit-text-stroke:  0.5px  rgb(0, 0, 0) ;
     text-align: center;
     padding: 14px 16px;
-
-    text-shadow: black 0px 0px  40px ;
+    text-shadow: rgb(238, 255, 0) 1px 1px  40px ;
 }
 
 
@@ -127,7 +150,6 @@ footer{
     flex-direction: column;
     align-items: center;
     flex-shrink: 0; 
-    height: 10%;
     background: rgb(15, 3, 24) ;
     color: rgb(201, 201, 201); ;
 }

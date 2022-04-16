@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Consumir API</title>
+    <link rel="shortcut icon" href="/imagenes/logo.png">    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/animacion-boton.css">
+    <link rel="stylesheet" href="css/animacion-card.css">
+    <link rel="stylesheet" href="css/animacion-checkbox.css">
+    <script src="js/fetch.js"></script>
 </head>
 <body>
     <header>
@@ -45,42 +47,32 @@
                 <input type="radio" name="filtro" id="galeria__x360--seleccion" >
                 <label for="x360">Xbox 360</label>
     
-            <article id="galeria__productos">
+            <article id="galeria__personajes">
                 
-                <div class="productos__ps4">
-                    <h3 id="nombreJuego">Bloodborne</h3>
-                    <hr/>
-                    <img src="imagenes/bloodbornePs4.jpg" alt="bloodborne" />
-                    <h5>Bloodborne nos lleva a la decrépita ciudad de Yharnam, cuyos habitantes han sido infectados por una misteriosa enfermedad sanguínea.</h5>
-                </div>
-                                
-                <div class="productos__ps4">
-                    <h3 id="nombreJuego">Immortals fenyx rising</h3>
-                    <hr/>
-                    <img src="imagenes/immortals-fenyx-rising-3Ps4.jpg" alt="inmortals-fenix" />
-                    <h5>Juega como Fenyx, una nueva semidiosa alada con la misión de salvar a los dioses griegos y a su hogar de una oscura maldición</h5>
-                </div>
-                                
-                <div class="productos__switch">
-                    <h3 id="nombreJuego">Legend of zelda: breath of the wild</h3>
-                    <hr/>
-                    <img src="imagenes/legend-zelda-breath-wildSwitch.jpg" alt="breath of the wild" />
-                    <h5>Nos presenta el título más ambicioso de la saga con un mundo abierto por explorar</h5>
-                </div>
-                                
-                <div class="productos__xone">
-                    <h3 id="nombreJuego">Gears 5</h3>
-                    <hr/>
-                    <img src="imagenes/portada-gears-5One.jpg" alt="gears of war 5" />
-                    <h5>Se centra en Kait Díaz (Laura Bailey), una forastera de ascendencia Locust. Como Kait, el jugador debe descubrir los orígenes del Enjambre </h5>
-                </div>
-                                
-                <div class="productos__x360">
-                    <h3 id="nombreJuego">Remember me</h3>
-                    <hr/>
-                    <img src="imagenes/remember-me360.jpg" alt="remember me" />
-                    <h5>Los recuerdos personales ahora pueden ser digitalizados, comprados, vendidos y comercializados.  </h5>
-                </div>
+                <div class="card">
+                    <div class="personaje-foto">
+                      <p><img src="imagenes/morty.png"></p>
+                    </div>
+                    <div class="nombre">
+                      <p>John Doe</p>
+                    </div>
+                    <div class="jobtitle">
+                      <p>DEVELOPER</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="todo" name="todo" value="todo">
+                        <label for="todo" data-content="vivo">vivo</label>
+                    </div>
+                        
+                    <div class="buttons">
+                      <div class="button1">
+                        <button>Button 1</button>
+                      </div>
+                      <div class="button2">
+                        <button>Button 2</button>
+                      </div>
+                    </div>
+                  </div>
 
             </article>
         </section>
