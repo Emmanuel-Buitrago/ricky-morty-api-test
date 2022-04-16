@@ -30,9 +30,15 @@ ul {
     padding: 0;
     padding-bottom:1vh;
     overflow: hidden;
+    background: white url(../imagenes/patron2.jpg);
+    background-repeat: repeat;
+    /*
     background-color: rgb(42, 35, 51);
     background: rgb(28,128,0);
-    background: linear-gradient(rgb(200, 255, 1) 1% ,rgba(28,128,0,1) 25%,rgba(28,128,0,1) 82%,rgba(255,255,255,1) 86%, rgba(28,128,0,1) 90%, rgb(0, 0, 0) 100%); }
+    background: linear-gradient(rgb(200, 255, 1) 1% ,rgba(28,128,0,1) 15%,rgba(28,128,0,1) 82%,rgba(255,255,255,1) 86%, rgba(28,128,0,1) 90%, rgb(0, 0, 0) 100%); 
+    */
+ }
+
 li {
     display:flex;
     align-items: center;
@@ -46,7 +52,8 @@ li img{
 
 li h1{
     font-size: 5vh;
-    font-weight:700;
+    font-size: 5wh;
+    font-weight:900;
     display: block;
     color: #69c8ec;
     -webkit-text-stroke:  0.5px  rgb(210, 255, 7) ;
@@ -55,21 +62,7 @@ li h1{
 
     text-shadow: black 0px 0px  40px ;
 }
-li a{
-    padding: 0.7rem;
-    display:flex;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    height: 100%;
-    
-}
-li a:hover {
-    padding: 0.7rem;
-    background-color: rgb(196, 132, 238);
-    border: solid 1px rgb(196, 132, 238);
-    border-radius: 1rem;
-}
+
 
 /**inicio del card**/
 
