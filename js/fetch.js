@@ -13,12 +13,12 @@ fetch(url)
 .then((resp) => resp.json())
 .then(function(data) {
   let authors = data.results;
-  return authors.map(function(author) {
+  return authors.map(function(personaje) {
     let li = createNode('li');
     let img = createNode('img');
     let span = createNode('span');
-    img.src = author.picture.medium;
-    span.innerHTML = `${author.name.first} ${author.name.last}`;
+    img.src = personaje.picture.medium;
+    span.innerHTML = `${personaje.name.first} ${personaje.name.last}`;
     append(li, img);
     append(li, span);
     append(ul, li);
@@ -27,3 +27,4 @@ fetch(url)
 .catch(function(error) {
   console.log(error);
 });
+//arrow function

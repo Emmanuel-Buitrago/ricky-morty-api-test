@@ -93,14 +93,56 @@ nav ul li h1{
     grid-auto-rows: minmax(100px, auto);
   }
 
-  #sel1{
+  .sel1{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .sella1{
     grid-column: 1;
     grid-row: 1;
   }
 
-  #sel2{
+
+
+
+  .sel2{
     grid-column: 1;
     grid-row: 2;
+  }
+  
+  .sella2{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .sel3{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .sella3{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .sel4{
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  .sella4{
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .sel5{
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  .sella5{
+    grid-column: 1;
+    grid-row: 5;
   }
 /**inicio del card**/
 
@@ -126,7 +168,8 @@ div h5{
 }
 
 
-img{ padding:1rem;
+img{ 
+    padding:1rem;
     max-height: 16rem;
     max-width: 18rem;
 }
