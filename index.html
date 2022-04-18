@@ -24,14 +24,48 @@
                 <li><span><img src="imagenes/morty.png" alt=""></span></li>
                 <li><span></span></li>
             </ul>
+
+           
         </nav>
         <div id="home"></div>
+
     </header>
+
     <main>
-        
+
+     
+
+      <aside class="Aside">
+
+         <article class="item-filter">
+          <input type="radio" name="filtro" id="galeria__xone--seleccion" >
+          <label for="xone">Xbox One</label>
+         </article>
+          
+
+         <article class="item-filter">
+          <input type="radio" name="filtro" id="galeria__ps4--seleccion" >
+          <label for="ps4">Ps4</label>
+
+         </article>
+
+          <article  class="item-filter">
+            <input type="radio" name="filtro" id="galeria__switch--seleccion" >
+            <label for="switch">Switch</label>
+          </article> 
+
+          <article  class="item-filter">
+            <input type="radio" name="filtro" id="galeria__x360--seleccion" >
+            <label for="x360">Xbox 360</label>
+          </article>
+   
+      </aside>
+
+
         <section class="galeria">
             <!--inicio del filtro (no se puede ingresar el filtro dentro de algun elemento sin usar jquery, el filtro estalla)
             el filtro tiene que ser hermano de id="imagenes" -->
+              <!--
                 <input type="radio" name="filtro" id="galeria__todo--seleccion"checked>
                 <label for="todo">Todo</label>
         
@@ -46,6 +80,12 @@
 
                 <input type="radio" name="filtro" id="galeria__x360--seleccion" >
                 <label for="x360">Xbox 360</label>
+                <div class="Search">
+                  <input type="search" name="" id="">
+
+                </div>
+
+              -->
     
             <article id="galeria__personajes">
                 
@@ -79,6 +119,11 @@
                       </div>
                     </div>
                   </div>
+
+
+
+
+                  
 
             </article>
         </section>

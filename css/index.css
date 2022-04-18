@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
 @font-face {
     font-family: Get_Schwifty;
     src: url(../fuentes/get_schwifty.ttf);
@@ -115,6 +117,34 @@ nav ul li h1{
     box-shadow: 5px 5px 5px 0px rgb(48, 0, 82);
 }
 
+/* Inicio del search*/
+
+.Aside{
+    padding: 2em;
+    background-color: #24325fff;
+    font-family: 'Patrick Hand SC', cursive;
+    color: #ffff;
+    border-radius: 10px;
+}
+
+.Aside label{
+    font-size: 30px;
+    align-items:stretch;
+}
+
+.item-filter{
+
+    margin: 1em;
+
+}
+
+/* FIN DEL SEARCH*/
+
+.galeria{
+    padding-right: 860px;
+}
+
+
 
 hr{
     background-color: rgb(149, 0, 255);
@@ -140,6 +170,8 @@ header {
     min-height: 10%
 }
 main{
+    display: flex;
+    justify-content: space-between;
     margin-top:1vh;
     padding: 1rem;
     flex: 1 0 auto; 
