@@ -6,7 +6,7 @@
     box-shadow: 1px 5px 60px 0px #4646466b;
     padding: 1px;
     margin: 15px;
-    margin-top:2rem;
+    margin-top:0;
    }
    
    .card .personaje-foto,.card .nombre,.card div p,.card .buttons,.card .estatus {
@@ -30,28 +30,28 @@
     font-size: .8em;
    }
 
-   .personaje-foto p img{
+   .card .personaje-foto p img{
     max-width: 80px;
     max-height: 80px;
    }
 
-   .buttons > div {
+   .card .buttons > div {
     padding: .5em;
    }
    
-   button {
+   .card div div button {
     padding: .5em;
     outline: none;
     background: transparent;
-    border: 1px solid #0f0f0f6b;
+    border: 1px solid #007061;
     border-radius: .4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: all .3s;
     font-size: .7em;
    }
    
-   .card .personaje-foto:hover,button:hover {
-    background: #252525;
+   .card .personaje-foto:hover,.card div div button:hover {
+    background: #007061;
     color: #f1f5f3;
    }
    
@@ -74,4 +74,9 @@
     text-transform: uppercase;
     letter-spacing: .5em;
    }
-   
+   .card hr{
+    background-color: rgba(0, 170, 162, 0.575);
+    height:1px;
+    max-height:1px !important;
+    width: 80%;
+}

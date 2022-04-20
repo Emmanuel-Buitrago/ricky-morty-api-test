@@ -18,19 +18,20 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><span><img src="imagenes/rick.png" alt=""></span></li>
+                <li class="nav__img--li"><span><img src="imagenes/rick.png" id="nav__img" alt="nav__img"></span></li>
                 <li><h1>Rick And Morty</h1></li>
-                <li><span><img src="imagenes/morty.png" alt=""></span></li>
+                <li class="nav__img--li"><span><img src="imagenes/morty.png" id="nav__img" alt=""></span></li>
                 <li><span></span></li>
             </ul>
         </nav>
         <div id="home"></div>
     </header>
-    <main>
+    <main class="contenedor-principal">
         
         <section class="galeria">
             <!--inicio del filtro (no se puede ingresar el filtro dentro de algun elemento sin usar jquery, el filtro estalla)
             el filtro tiene que ser hermano de id="imagenes" -->
+            <div class="contenedor__filtro"></div>
                 <input type="radio" name="filtro" class="sel1" id="galeria__todo--seleccion"checked>
                 <label class="sella1" for="todo">Todo</label>
         
@@ -59,14 +60,15 @@
                       <p>Especie: Humano</p>
                     </div>
                     <div class="estatus">
-                        <input type="checkbox" id="todo" name="todo" value="todo">
+                        <input type="checkbox" id="vivo">
+                        <i></i>
                         <label for="todo" data-content="vivo">vivo</label>
                     </div>
                     <div class="locacionAct">
-                        <p>Locacion (actual): tierra</p>
+                        <p>Locación (actual): tierra</p>
                     </div>
                     <div class="locacionOrg">
-                        <p>Locacion (origen): tierra</p>
+                        <p>Locación (origen): tierra</p>
                     </div>
                         
                     <div class="buttons">

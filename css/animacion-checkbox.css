@@ -1,55 +1,33 @@
-input[type="checkbox"] {
+#vivo {
+  appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+
+  }
+.estatus{
     position: relative;
-    width: 1.5em;
-    height: 1.5em;
-    color: black;
-    border: 1px solid gray;
-    border-radius: 4px;
-    appearance: none;
-    outline: 0;
-    cursor: pointer;
-    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
-    margin-right: 4px;
-  }
-  
-  input[type="checkbox"] :checked {
-    color: white;
-    border-color: green;
-    background: green;
-
-
-  }
-  label::before {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  } 
-  input[type="checkbox"] :before {
-    position: absolute;
-    content: '';
+    padding:5px 0 5px 60px; /* Damos un padding de 60px para posicionar 
+          el elemento <i> en este espacio*/
     display: block;
-    top: 2px;
-    left: 7px;
-    width: 8px;
-    height: 14px;
-    border-style: solid;
-    border-color: white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    opacity: 0;
+    
   }
-label {
-  position: relative;
-  cursor: pointer;
-
-  user-select: none;
-  
+#vivo + i{
+  background: #f0f0f0;
+  border:2px solid rgba(0,0,0,0.2);
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 52px;
+	height: 30px;
+	border-radius: 15px;
 }
-label:before {
-    position: absolute;
-    content: attr(data-content);
-    color: lightgray;
-    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  #vivo:checked ~  label {
+    color: rgb(255, 81, 0);
     text-decoration: line-through;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 1px;
     text-decoration-color: black;
     transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
