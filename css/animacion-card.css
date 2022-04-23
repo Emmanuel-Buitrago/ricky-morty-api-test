@@ -1,5 +1,8 @@
 .card {
-    max-width: 250px;
+    display: flex;
+    height: 200px;
+    width: 450px;/*
+    max-width: 250px;*/
     border-radius: 10px;
     background: #f1f5f3;
     box-shadow: 1px 5px 60px 0px #4646466b;
@@ -10,8 +13,9 @@
    
    .card .personaje-foto,.card .nombre,.card div p,.card .buttons,.card .estatus {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;/*
+    align-items: center;*/
+    text-align: right;
    }
    
    .card .personaje-foto {
@@ -27,6 +31,7 @@
    
    .card .personaje-foto p {
     font-size: .8em;
+    margin-left: 15px;
    }
 
    .personaje-foto p img{
@@ -74,3 +79,20 @@
     letter-spacing: .5em;
    }
    
+   
+   .Info_personaje p{
+       margin: 1em;
+       text-align: left;
+       
+   }
+   
+
+   .Info_personaje p{
+       text-align: left;
+       text-justify: auto;
+
+   }
+
+
+
+
