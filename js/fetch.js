@@ -23,8 +23,7 @@ var mostrarData = (data)=>{
     console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
     
     console.log(data[i].location);
-    body+= '<div class="card-character"><img src="'+data[i].image+'" class="img-character" alt="logo personaje"><div class="info-character"><h3>Nombre: '+data[i].name+' </h3><h3>Estatus: <span> '+data[i].status+' </span> </h3><h3>Locacion:  '+data[i].location.name+' </h3><h3>Origen: '+data[i].origin.name+'</h3><a href="#" class="cta">More</a></div></div>'
-  }
+    body += `<article class="card-character"><img src="${data[i].image}" class="img-character" alt="logo personaje"><div class="info-character"><h3>Nombre: ${data[i].name} </h3><h3>Estatus: <span> ${data[i].status} </span> </h3><h3>Locacion:  ${data[i].location.name} </h3><h3>Origen: ${data[i].origin.name}</h3><a href="#" class="cta">More</a></div></article>`  }
   document.getElementById('characters-info').innerHTML=body
 }
   debugger
