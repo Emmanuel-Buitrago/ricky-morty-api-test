@@ -98,9 +98,6 @@ nav ul li h1{
 
 .galeria {
     height:fit-content;
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-gap: 10px;
   }
 
 .contenedor__filtro{
@@ -109,75 +106,12 @@ nav ul li h1{
   background: #ff8a5cc5;
   width: 100%;
   height: 100%;
-  grid-column: 1;
-  grid-row: 1/6;
 
 }
 
-.sel1{
-    width: 15px;
-    height: 15px;
-    grid-column: 1;
-    grid-row: 1/6;
-  }
-  
-.sella1{
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-.sel2{
-  width: 15px;
-    height: 15px;
-    grid-column: 1;
-    grid-row: 2;
-  }
-  
-.sella2{
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-.sel3{
-  width: 15px;
-    height: 15px;
-    grid-column: 1;
-    grid-row: 3;
-  }
-  
-.sella3{
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-.sel4{
-  width: 15px;
-    height: 15px;
-    grid-column: 1;
-    grid-row: 4;
-  }
-  
-.sella4{
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-.sel5{
-    width: 15px;
-    height: 15px;
-    grid-column: 1;
-    grid-row: 5;
-  }
-  
-.sella5{
-    grid-column: 1;
-    grid-row: 5;
-  }
 /**inicio del card**/
 
 #galeria__personajes{
-    grid-column: 2/16;
-    grid-row: 1/8;
     background: rgb(255, 255, 255);
     border-radius:1rem;
     display: flex;
